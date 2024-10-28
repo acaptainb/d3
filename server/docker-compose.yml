@@ -1,0 +1,9 @@
+version: '3'
+services:
+  app:
+    image: your-dockerhub-username/d3:latest
+    restart: unless-stopped
+    env_file:
+      - d3-env
+    ports:
+      - "3000:3000"
